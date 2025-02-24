@@ -4,7 +4,7 @@ function About() {
         <div className="about">
             <h1 className="ha">About Me</h1>
             <center>
-                <img className="imgA" src="/public/me.JPG"></img>
+                <img className="imgA" src="/me.JPG"></img>
                 <p className="ac">
                     I am currently pursuing my degree in Electronics and Communication
                     Engineering (ECE) with a strong passion for software development, web
