@@ -1,0 +1,72 @@
+.projects-container {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #e0e0e0, #b0c4de);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+        padding-top: 20px;  /* Moves it down */
+        margin-bottom: 40px; /* Creates space below */
+    
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1); /* Transparent card */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-top: 7px;
+    color: #dddddd;
+}
+
+
+.project ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+strong {
+    color: #b48cf0;
+}
+body{
+    background: url('/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,71 @@
+/* Ensure the container is centered */
+/* Ensure the body and root take up full height */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent extra scrollbars */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Apply the animated masked text effect */
+.masked-text {
+    font-weight: bold;
+    text-transform: uppercase;
+        font-size: 100px; /* Adjust to a smaller size */
+        position: relative;
+        top: -20px; /* Move text slightly upwards */
+        text-align: center;
+    
+    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 200%; /* Ensure image covers text */
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block; /* Prevent text from collapsing */
+    white-space: nowrap; /* Prevent text from breaking */
+
+    animation: animate-background 5s infinite alternate ease-in-out;
+}
+
+@keyframes animate-background {
+    0% { background-position: left center; }
+    100% { background-position: right center; }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+    color: white;
+}
+
+.masked-text {
+    font-size: 70px; /* Adjust size if needed */
+    font-weight: bold;
+}
+
+.sub-text {
+    font-size: 24px;
+    margin-top: 7px;
+    color: #ddd;
+}
+.intro-text {
+    font-size: 18px;
+    max-width: 650px;
+    max-height: 500px;
+    text-align: center;
+    color: #ccc;
+}

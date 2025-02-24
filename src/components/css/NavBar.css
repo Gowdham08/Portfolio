@@ -1,0 +1,46 @@
+nav {
+    position: fixed; /* Fixes navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* 100% opaque black */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;  /* Centers navbar items */
+    align-items: center;
+    gap: 30px;  /* Increases spacing between menu items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px; /* Adds padding for better clickability */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #a970ff; /* Adds a hover effect */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px; /* Reduce spacing for smaller screens */
+    }
+}

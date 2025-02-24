@@ -1,0 +1,61 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: -50px; /* Moves the entire section upwards */
+}
+
+.skills-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #e0e0e0, #b0c4de);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+        padding-top: 10px;  /* Moves it down */
+        margin-bottom: 10px; /* Creates space below */
+    
+    
+}
+
+/* Styling for subheadings (h2) */
+.skills-section h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 50px; /* Increase space above */
+    margin-bottom: 20px; /* Increase space below */
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Image Styling */
+.skills-grid img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.skills-grid img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.skills-space{
+    margin-bottom:120px ;
+    padding: 25px;
+    color: #ddd;
+}
