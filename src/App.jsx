@@ -1,5 +1,5 @@
 import React from 'react';
-import Skills from './components/functionalcomponents/skills';
+import Skills from './components/functionalcomponents/Skills';
 import About from './components/functionalcomponents/About';
 import NavBar from './components/functionalcomponents/NavBar';
 import Home from './components/functionalcomponents/Home';
